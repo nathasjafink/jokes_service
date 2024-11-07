@@ -5,7 +5,7 @@ import os
 
 app = Flask(__name__)
 
-key = os.getenv('KEY', 0)
+key = os.environ.get('KEY', 0)
 
 @app.route('/', methods=['GET'])
 def root():
