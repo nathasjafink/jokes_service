@@ -5,8 +5,6 @@ import os
 
 app = Flask(__name__)
 
-key = os.getenv('KEY', 0)
-
 @app.route('/', methods=['GET'])
 def root():
     return jsonify({
