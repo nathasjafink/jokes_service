@@ -1,4 +1,3 @@
-# Sample jokes database
 jokes = [
     {
         "id": 1,

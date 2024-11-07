@@ -5,7 +5,8 @@ import os
 
 app = Flask(__name__)
 
-port = int(os.environ.get('PORT', 5000))
+# Denne linie er vigtig at have med når din applikation skal deployes!
+#port = int(os.environ.get('PORT', 5000))
 
 @app.route('/', methods=['GET'])
 def root():
@@ -80,4 +81,4 @@ def health_check():
     return jsonify({"status": "healthy"}), 200
 
 if __name__ == '__main__':
-    app.run(host='0.0.0.0', port=port)
+    app.run(host='0.0.0.0' )
