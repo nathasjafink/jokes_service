@@ -13,10 +13,5 @@ jokes = [
         "id": 3,
         "setup": "Why did the scarecrow win an award?",
         "punchline": "Because he was outstanding in his field!"
-    },
-    {
-        "id": 4444,
-        "setup": "Why did the scarecrow win an award? XXX",
-        "punchline": "Because he was outstanding in his field! XXX"
     }
 ]
