@@ -1,7 +1,6 @@
 from flask import Flask, jsonify
 import random
 from jokes_data import jokes
-import os
 
 app = Flask(__name__)
 
@@ -12,8 +11,7 @@ def root():
         "version": "1.0.0",
         "description": "A RESTful API service that provides jokes",
         "documentation": "/api",
-       "health": "/health",
-       "KEY": key
+       "health": "/health"
     })
 
 @app.route('/api', methods=['GET'])
