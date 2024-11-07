@@ -6,7 +6,7 @@ import os
 app = Flask(__name__)
 
 # Denne linie er vigtig at have med når din applikation skal deployes!
-port = int(os.environ.get('PORT', 5001))
+port = int(os.environ.get('PORT', 5002))
 
 @app.route('/', methods=['GET'])
 def root():
