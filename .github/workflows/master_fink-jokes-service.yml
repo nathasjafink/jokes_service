@@ -27,7 +27,7 @@ jobs:
 
     - name: Build and push container image to registry
       run:
-         docker build -t joke-service
+         docker build -t joke-service .
          docker tag jokes-service:latest ${{secrets.DOCKER_USERNAME}}/jokes-service:latest
          docker push ${{secrets.DOCKER_USERNAME}}/jokes-service:latest
 
