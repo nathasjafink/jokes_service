@@ -15,7 +15,7 @@ docker build -t joke-service .
 
 2. Run the container:
 ```bash
-docker run -p 5000:5000 joke-service
+docker run -p 5000:80 joke-service
 ```
 
 ### Running without Docker
